@@ -9,8 +9,29 @@ body{
     line-height: 1.5;
     color: #333;
     overflow-x: hidden;
+    background: #000;
 }
-
+.loading{
+    height: 100vh;
+    width: 100vw;
+    background: #000;
+    display: flex;
+    z-index: 100;
+    position: absolute;
+}
+#box{
+    background: #fff;
+    position: relative;
+    height: 80px;
+    width: 80px;
+    border-radius: 20px;
+    color:#000;
+    font-size: 7.5rem;
+    text-align: center;
+    line-height: 67px;  
+    font-weight:bold;
+    margin: auto;
+}
 .v-header{
     height: 100vh;
     display: flex;
@@ -33,6 +54,7 @@ body{
     width: 100%;
     height: 100vh;
     overflow: hidden;
+    background: #000;
 }
 
 .fullscreen-video-wrap video{
@@ -60,7 +82,7 @@ body{
     opacity: 0.5;
 }
 
-.header-content,.header-content-about{
+.header-content,.header-content-about,.projects{
     z-index: 3;
 
 }
@@ -81,6 +103,26 @@ body{
     color: #E42626;
     text-transform: uppercase;
 }
+.projects{
+    height: 50%;
+    border-radius: 20px;
+    padding:0;
+}
+.projects p{
+    height: 12rem;
+}
+.projects .btn{
+    position: relative;
+    margin: 0;
+    bottom: 0rem;
+}
+.project{
+    display: none;
+}
+.active{
+    display: block;
+}
+
 
 
 .btn{
@@ -90,6 +132,7 @@ body{
     padding: 1rem 2rem;
     text-decoration: none;
 }
+
 
 
 @media(max-width:960px){
@@ -105,14 +148,18 @@ body{
     }
 }
 
-@media(max-width:450px){
+@media(max-width:525px){
     .header-content p,.header-content-about p{
-        height: 15rem;
+        height: 12rem;
         font-size: 0.8rem;
         display: block;
         padding-bottom: 2rem;
     }
     .btn{
         font-size: 0.5rem;
+    }
+    .projects .btn{
+        margin: 0;
+        padding: 1rem;
     }
 }
