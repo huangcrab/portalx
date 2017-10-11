@@ -37,7 +37,7 @@ $(document).ready(function(){
         $(".projects").hide();
         $(".fullscreen-video-wrap video").fadeOut(1500)
         .delay(600)
-        .queue(function(next) { $(this).attr('src','assets/video.mp4'); next(); })
+        .queue(function(next) { $(this).attr('src','https://firebasestorage.googleapis.com/v0/b/lcwalpha.appspot.com/o/video.mp4?alt=media&token=1bb70024-f6f7-47bf-842d-fde9402999c4'); next(); })
         .delay(500)
         .fadeIn(500); 
         $(".header-content").show("slide",{direction:"right"},1500);
