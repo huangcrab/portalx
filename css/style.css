@@ -1,6 +1,12 @@
 *{
     box-sizing: border-box;
 }
+.project a:visited{
+    color: #DF541D;
+}
+.project span{
+    color: #DF541D;
+}
 
 body{
     margin: 0;
@@ -109,21 +115,32 @@ body{
     padding:0;
 }
 .projects p{
+    font-size: 1.2rem;
     height: 12rem;
+    margin:0;
 }
 .projects .btn{
     position: relative;
     margin: 0;
     bottom: 0rem;
 }
+.project h1{
+    margin: 0;
+}
 .project{
     display: none;
+    margin: 0;
+    padding: 0;
 }
 .active{
     display: block;
 }
 
-
+.fa{
+    font-size: 4rem;
+    color: #6DAFEC;
+    padding-left: 1rem;
+}
 
 .btn{
     background: #0C3B94;
@@ -146,10 +163,13 @@ body{
         display: block;
         padding-bottom: 2rem;
     }
+    .projects .btn{
+        bottom: -6rem;
+    }
 }
 
 @media(max-width:525px){
-    .header-content p,.header-content-about p{
+    .header-content p,.header-content-about p, .project p{
         height: 12rem;
         font-size: 0.8rem;
         display: block;
@@ -159,7 +179,7 @@ body{
         font-size: 0.5rem;
     }
     .projects .btn{
-        margin: 0;
+        margin-top: 6rem;
         padding: 1rem;
     }
 }
