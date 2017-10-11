@@ -90,7 +90,7 @@ function moveUp(){
         if(num == value.id){
             nextKey = key - 1;
             if(nextKey < 0){
-                nextKey = 4;
+                nextKey = projects.length - 1;
             }
         }  
     })
