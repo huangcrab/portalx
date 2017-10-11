@@ -24,7 +24,7 @@ $(document).ready(function(){
         $(".header-content-about").hide("slide",{direction:"left"},1500);
         $(".fullscreen-video-wrap video").fadeOut(1500)
         .delay(500)
-        .queue(function(next) { $(this).attr('src','assets/project2.mov'); next(); })
+        .queue(function(next) { $(this).attr('src','https://firebasestorage.googleapis.com/v0/b/lcwalpha.appspot.com/o/project2.mov?alt=media&token=03a37538-c1a7-4468-9a92-eb58f9e638a3'); next(); })
         .delay(500)
         .fadeIn(500); 
         $(".projects").delay(1500);
