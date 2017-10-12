@@ -1,6 +1,9 @@
 *{
     box-sizing: border-box;
 }
+.btn:hover{
+    cursor: cell;
+}
 .project a{
     color: #DF541D;
 }
