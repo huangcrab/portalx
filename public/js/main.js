@@ -24,9 +24,8 @@ $(document).ready(function(){
         $(".header-content-about").hide("slide",{direction:"left"},1500);
         $(".fullscreen-video-wrap video").fadeOut(1500)
         .delay(500)
-        .queue(function(next) { $(this).attr('src','assets/project2.mov'); next(); })
-        .delay(500)
-        .fadeIn(500); 
+        .queue(function(next) { $(this).attr('src','assets/project.mov'); next(); })
+        .fadeIn(1000); 
         $(".projects").delay(1500);
         $(".projects").fadeIn(2000);
     });
@@ -38,7 +37,7 @@ $(document).ready(function(){
         $(".header-overlay").fadeIn(1500);
         $(".fullscreen-video-wrap video").fadeOut(1500)
         .delay(600)
-        .queue(function(next) { $(this).attr('src','https://firebasestorage.googleapis.com/v0/b/lcwalpha.appspot.com/o/video.mp4?alt=media&token=1bb70024-f6f7-47bf-842d-fde9402999c4'); next(); })
+        .queue(function(next) { $(this).attr('src','assets/video.mp4'); next(); })
         .delay(500)
         .fadeIn(500); 
         $(".header-content").show("slide",{direction:"right"},1500);
@@ -46,11 +45,12 @@ $(document).ready(function(){
 
     $("#next").click(function(){
         moveDown();
-
     });
+    jQuery(window).on("swipeleft", function() {moveUp();} );
     $("#prev").click(function(){
         moveUp();
     })
+    jQuery(window).on("swiperight", function() {moveDown();} );
 
 });
 var projects = document.querySelectorAll(".project");

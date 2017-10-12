@@ -185,4 +185,53 @@ body{
         margin-top: 6rem;
         padding: 1rem;
     }
+    video{
+        visibility: hidden;
+    }
+}
+
+@media(max-width:425px){
+    .project h3{
+        font-size: 1rem;
+    }
+    .header-content h1,.header-content-about h1{
+        font-size: 2rem;
+    }
+    .project h1{
+        font-size: 1.5rem;
+    }
+    .header-content p,.header-content-about p, .project p{
+        height: 8rem;
+        font-size: 0.8rem;
+        display: block;
+        padding-bottom: 2rem;
+    }
+    .btn{
+        font-size: 0.5rem;
+        padding: 1rem;
+    }
+    .fa{
+        font-size: 2rem;
+    }
+    .header-content-about{
+        position: relative;
+        top: -100px;
+    }
+    .projects{
+        position: relative;
+        top: -100px;
+    }
+    .projects .btn{
+        margin-top: 6rem;
+        padding: 0.8rem;
+    }
+    .header-content-about .btn{
+        position: relative;
+        bottom: -120px;
+    }
+
+    video{
+        visibility: hidden;
+    }
+
 }
