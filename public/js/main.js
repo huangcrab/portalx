@@ -24,7 +24,7 @@ $(document).ready(function(){
         $(".header-content-about").hide("slide",{direction:"left"},1500);
         $(".fullscreen-video-wrap video").fadeOut(1500)
         .delay(500)
-        .queue(function(next) { $(this).attr('src','assets/project.mov'); next(); })
+        .queue(function(next) { $(this).attr('src','assets/project.mp4'); next(); })
         .fadeIn(1000); 
         $(".projects").delay(1500);
         $(".projects").fadeIn(2000);
